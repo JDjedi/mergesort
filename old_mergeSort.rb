@@ -53,3 +53,7 @@ sort[1, 2, 7, 98, 45] sort[5, 1, 4, 56, 23]
 sort [1,2] sort[7,98,45] sort[5,1] sort[4,56,23] 
 sort[1] sort[7,8] sort[45] sort[5] sort[1] sort[4]  sort[56,23] merge[1,7 8, 45]
          sort[7] sort[8]                                sort [56] sort[23] merged[1,7] merged[8, 45] merged[5,1]
+
+
+
+         
