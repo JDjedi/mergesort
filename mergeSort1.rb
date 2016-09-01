@@ -15,13 +15,15 @@ def sort(arg)
 end
 
 def merge(arg, arg1)
-#	puts "#{arg}\n#{arg1}" #Test
-	if arg[0] < arg1[0]
-		@merged.push(arg)
-#		merge(arg, arg1)
+	puts "#{arg} #{arg1}" #Test
+	if arg[0] < arg1[0] # puts the lesser of two args
+		cont_1 = arg[0] #put the lower of the two arg into this container
+		@merged.push(cont_1) #push the containers contents to the merged array
+		merge(arg, arg1) #recursive function
 	else
-		@merged.push(arg1)
-#		merge(arg, arg1)
+		cont_2 = arg1[0] #put the lower of the two arg into this container
+		@merged.push(cont_2) #push the containers contents to the merged array 
+		merge(arg, arg1) #recursive function
 	end
 	puts @merged
 end
