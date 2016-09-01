@@ -19,11 +19,11 @@ def merge(arg, arg1)
 	if arg[0] < arg1[0] # puts the lesser of two args
 		cont_1 = arg[0] #put the lower of the two arg into this container
 		@merged.push(cont_1) #push the containers contents to the merged array
-		merge(arg, arg1) #recursive function, want to pass arg1[0]
+		sort(arg1[0])
 	else
 		cont_2 = arg1[0] #put the lower of the two arg into this container
 		@merged.push(cont_2) #push the containers contents to the merged array 
-		merge(arg, arg1) #recursive function, want to pass arg[0]
+		sort(arg[0])
 	end
 	puts @merged
 end
