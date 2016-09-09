@@ -1,5 +1,6 @@
-@array = [1, 2, 7, 98, 45, 5, 1, 4, 56, 23]
+@array = [2, 56, 43, 56, 67, 100, 5, 4, 3, 55]
 # @merged = []
+p @array
 
 def sort(arg)
 	if arg.length == 1
@@ -15,7 +16,7 @@ end
 
 def merge(arg, arg1)
 	array = []
-	puts "#{arg} #{arg1}" #Test
+#	puts "#{arg} #{arg1}" #Test
 	while arg.any? || arg1.any? do
 		if arg[0].nil?
 			cont_1 = arg1.shift
@@ -31,7 +32,7 @@ def merge(arg, arg1)
 			array.push(cont_4) #push the containers contents to the merged array
 		end
 	end
-#	p array
+	p array
 end
 
 
